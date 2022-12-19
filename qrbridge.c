@@ -121,7 +121,7 @@ int _writeToPNG(char * _qrData, int _size, int _minModulePixelSize, char * fn) {
 
   TinyPngOut_write(&tpo, (const uint8_t *)&tmpData, v/3);
   v = 0;
-
+  fclose(fp);
 }
 
 uint32_t _imgSizeWithBorder(char * _qrData, int _size) {
