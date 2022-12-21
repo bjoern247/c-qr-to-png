@@ -96,7 +96,7 @@ int _writeToPNG(char * _qrData, int _size, int _minModulePixelSize, char * fn) {
           }
         }
       }
-      // border rechts
+      // right border
       for (int i = 0; i < qrSizeFitsInMaxImgSizeTimes; ++i) {
         tmpData[v++] = whitePixel;
         tmpData[v++] = whitePixel;
@@ -110,7 +110,7 @@ int _writeToPNG(char * _qrData, int _size, int _minModulePixelSize, char * fn) {
   }
 
   v = 0;
-  // border drunter
+  // bottom border
   for (int i = 0; i < pngWH; i++) {
     for (int j = 0; j < pixelsWHPerModule; j++) {
       tmpData[v++] = whitePixel;
